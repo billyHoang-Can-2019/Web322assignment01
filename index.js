@@ -20,10 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 //Route for the Home Page
 app.get("/",(req,res)=>{
     res.render("home",{
-        title:"Home Page",
-        category_list: productModel.getcategory_list(),
-        bestSelling: productModel.getbestseller_list()
-
+        title:"Home Page"
     });
 });
 /**REQUEST FORM */
