@@ -61,7 +61,7 @@ app.post("/signUp_Form",(req,res)=> {
     const error  = [];
     //a small validation for the password, it will be upgraded in the future version
     if (req.body.password.length < 6) {
-        error.push(' password must at least 6 characters');
+        error.push(' password must at least 6 characters ');
     };
     if (req.body.password != req.body.password_again){
         error.push(' password must match');

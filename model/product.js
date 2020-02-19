@@ -30,6 +30,7 @@ const products=
         return this.products;
     },
     getcategory_list() {
+        console.log(`test category bat ki ${this.category[0].name}`);
         return this.category;
     },
     getbestseller_list() {
