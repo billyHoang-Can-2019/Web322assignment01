@@ -13,5 +13,14 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billyHoang-Can-2019/Web322assignment01.git"
+  },
+  "bugs": {
+    "url": "https://github.com/billyHoang-Can-2019/Web322assignment01/issues"
+  },
+  "homepage": "https://github.com/billyHoang-Can-2019/Web322assignment01#readme"
 }
