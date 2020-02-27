@@ -23,6 +23,7 @@ app.get("/",(req,res)=>{
         title:"Home Page",
         category_list: productModel.getcategory_list(),
         bestSelling: productModel.getbestseller_list()
+
     });
 });
 /**REQUEST FORM */
@@ -61,7 +62,7 @@ app.post("/signUp_Form",(req,res)=> {
     const error  = [];
     //a small validation for the password, it will be upgraded in the future version
     if (req.body.password.length < 6) {
-        error.push(' password must at least 6 characters ');
+        error.push(' password must at least 6 characters');
     };
     if (req.body.password != req.body.password_again){
         error.push(' password must match');
@@ -89,7 +90,7 @@ app.get("/productspage",(req,res)=>{
         products :productModel.getAllProducts(),
     });
 });
-const PORT=process.env.PORT || 3000;
+const PORT=3000;
 //This creates an Express Web Server that listens to HTTP Reuqest on port 3000
 app.listen(PORT,()=>{
     console.log(`Web Server Started`);
