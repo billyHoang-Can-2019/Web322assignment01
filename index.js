@@ -90,7 +90,7 @@ app.get("/productspage",(req,res)=>{
         products :productModel.getAllProducts(),
     });
 });
-const PORT=3000;
+const PORT=process.env.PORT||3000;
 //This creates an Express Web Server that listens to HTTP Reuqest on port 3000
 app.listen(PORT,()=>{
     console.log(`Web Server Started`);
